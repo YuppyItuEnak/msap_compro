@@ -4,7 +4,7 @@ return [
 
     // Hero
     'hero_title' => 'About',
-    'hero_company' => 'CV. Mitra Sarana Abdi Pratama',
+    'hero_company' => 'Mitra Sarana Abdi Pratama',
     'hero_sub' => 'A contractor and trading services company that ',
     'hero_subtitle' => 'is innovative, continuously evolving, and trusted across Indonesia',
 

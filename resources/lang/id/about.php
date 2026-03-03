@@ -4,7 +4,7 @@ return [
 
     // Hero
     'hero_title' => 'Tentang',
-    'hero_company' => 'CV. Mitra Sarana Abdi Pratama',
+    'hero_company' => 'Mitra Sarana Abdi Pratama',
     'hero_sub' => 'Perusahaan jasa kontraktor dan perdagangan yang',
     'hero_subtitle' => 'inovatif, selalu berkembang, dan terpercaya di Indonesia',
 

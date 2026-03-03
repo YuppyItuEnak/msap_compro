@@ -38,10 +38,9 @@
 
         <div class="rounded-2xl overflow-hidden shadow-2xl border border-gray-100 mb-16">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.270928236209!2d112.775833!3d-7.3235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb217f259695%3A0x66c89c894817a783!2sRungkut%20Menanggal%20Harapan!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.164746586727!2d112.77569217577523!3d-7.335387692673086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb6675ff7b69%3A0x2c913e6738ef284c!2sCV%20MITRA%20SARANA%20ABDI%20PRATAMA%20(MSAP)!5e0!3m2!1sen!2sid!4v1772547543182!5m2!1sen!2sid"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">

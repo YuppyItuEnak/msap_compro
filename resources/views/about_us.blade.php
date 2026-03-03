@@ -11,7 +11,7 @@
             <div class="text-center">
                 <h1
                     class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight drop-shadow-2xl">
-                    {{ __('about.hero_title') }}
+                    {{ __('about.hero_title') }} <br>
                     <span class="text-blue-400">{{ __('about.hero_company') }}</span>
                 </h1>
 
