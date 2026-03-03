@@ -29,14 +29,16 @@
          <!-- RIGHT BUTTON -->
          <div class="flex md:order-2 space-x-3">
              <!-- LANGUAGE BUTTON -->
-             <button type="button"
+             <a href="{{ route('lang.switch', app()->getLocale() === 'id' ? 'en' : 'id') }}"
                  class="flex items-center gap-2 px-4 py-2 border border-blue-500
-           rounded-md bg-white text-blue-600 font-semibold text-sm
-           shadow-sm hover:shadow-md hover:bg-blue-50
-           focus:outline-none focus:ring-2 focus:ring-blue-300">
-                 <span>EN</span>
-                 <img src="https://flagcdn.com/w20/gb.png" alt="English" class="w-5 h-5" />
-             </button>
+          rounded-md bg-white text-blue-600 font-semibold text-sm shadow-sm">
+
+                 <span>{{ app()->getLocale() === 'id' ? 'EN' : 'ID' }}</span>
+
+                 <img src="https://flagcdn.com/w20/{{ app()->getLocale() === 'id' ? 'gb' : 'id' }}.png"
+                     class="w-5 h-5 rounded-sm" />
+             </a>
+
 
              <!-- MOBILE MENU BUTTON -->
              <button data-collapse-toggle="navbar-menu" type="button"
@@ -64,7 +66,7 @@
    {{ request()->is('/')
        ? 'bg-blue-600 text-white md:bg-transparent md:text-blue-600 font-semibold'
        : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600' }}">
-                         Beranda
+                         {{ __('message.Home') }}
                      </a>
 
 
@@ -76,7 +78,7 @@
    {{ request()->is('about')
        ? 'bg-blue-600 text-white md:bg-transparent md:text-blue-600 font-semibold'
        : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600' }}">
-                         Tentang Kami
+                         {{ __('message.About_Us') }}
                      </a>
 
 
@@ -88,7 +90,7 @@
    {{ request()->is('contact')
        ? 'bg-blue-600 text-white md:bg-transparent md:text-blue-600 font-semibold'
        : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-600' }}">
-                         Kontak
+                         {{ __('message.Contact') }}
                      </a>
 
                  </li>

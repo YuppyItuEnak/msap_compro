@@ -13,3 +13,13 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/lang/{locale}', function ($locale) {
+    if (! in_array($locale, ['id', 'en'])) {
+        abort(404);
+    }
+
+    session(['locale' => $locale]);
+
+    return redirect()->back();
+})->name('lang.switch');

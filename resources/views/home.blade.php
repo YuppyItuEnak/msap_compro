@@ -1,36 +1,49 @@
+<?php
+$isIndo = app()->getLocale() === 'id';
+?>
+
 <x-layout>
     {{-- Hero Section --}}
-    <section class="relative py-32 md:py-48 overflow-hidden bg-gray-100">
+    <section class="relative py-32 md:py-48 overflow-hidden bg-center bg-cover "
+        style="background-image: url('{{ asset('images/hero.jpg') }}');">
+
+
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center">
 
                 <h1
                     class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 [text-shadow:_0_4px_12px_rgb(0_0_0_/_50%)]">
-                    Kontraktor & Maintenance <br>Terpercaya di <span class="text-blue-800">Indonesia </span>
+
+                    @if ($isIndo)
+                        Kontraktor & Maintenance <br>Terpercaya di <span class="text-blue-800">Indonesia </span>
+                    @else
+                        <span class="text-blue-800">Indonesia</span>'s Leading Contractor & Maintenance Provider
+                    @endif
                 </h1>
 
                 <div class="w-24 h-1.5 bg-blue-800 mx-auto mb-8 rounded-full shadow-lg"></div>
 
                 <p
                     class="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed [text-shadow:_0_2px_8px_rgb(0_0_0_/_60%)]">
-                    Inovatif, Selalu Berkembang, dan Terpercaya dalam Memberikan <br><span class="font-bold">Solusi Jasa
-                        Kontraktor dan
-                        Perdagangan</span>
+                    {{ __('message.Hero_Section.Subtitle') }} <span
+                        class="font-bold">{{ __('message.Hero_Section.Sub2') }}</span>
                 </p>
 
                 <div class="mt-12 flex flex-wrap justify-center gap-5">
                     <button
                         class="px-8 py-4 bg-white text-[#002473] font-bold rounded-xl shadow-2xl hover:bg-gray-100 transition-all transform hover:-translate-y-1">
-                        Pelajari Lebih Lanjut
+                        {{ __('message.Contact_Button') }}
                     </button>
+
                     <button
                         class="px-8 py-4 bg-[#002473]/80 text-white border-2 border-white/30 rounded-xl font-bold backdrop-blur-sm hover:bg-[#002473] transition-all transform hover:-translate-y-1 shadow-2xl">
-                        Hubungi Kami
+                        {{ __('message.Learn_Button') }}
                     </button>
                 </div>
             </div>
         </div>
     </section>
+
 
 
     {{-- About Section --}}
@@ -39,19 +52,15 @@
 
         <div class="order-2 md:order-1">
             <h2 class="text-4xl font-bold mb-4 text-[#002473]">
-                Tentang CV. Mitra Sarana Abdi Pratama (MSAP)
+                {{ __('message.About_Section.About_Title') }}
             </h2>
 
             <p class="text-gray-800 text-xl font-semibold leading-relaxed mb-4 md:mr-25">
-                CV. Mitra Sarana Abdi Pratama (MSAP) adalah perusahaan kontraktor dan penyedia jasa pemeliharaan
-                terkemuka yang berfokus pada solusi teknik elektrikal, mekanikal, dan konstruksi berkualitas tinggi.
-                Dengan dukungan tenaga ahli tersertifikasi dan peralatan modern, kami berkomitmen memberikan layanan
-                pemeliharaan dan pengadaan material terbaik untuk mendukung operasional bisnis Anda.
+                {{ __('message.About_Section.About_Description1') }}
             </p>
 
             <p class="text-gray-800 text-xl font-semibold leading-relaxed mb-12 md:mr-25">
-                Kami melayani berbagai sektor mulai dari instansi pemerintah hingga perusahaan swasta nasional dengan
-                standar keselamatan (K3) yang ketat, profesionalisme tinggi, dan harga yang kompetitif.
+                {{ __('message.About_Section.About_Description2') }}
             </p>
 
             <a href=""
@@ -59,7 +68,7 @@
                       focus:ring-4 focus:ring-blue-300
                       shadow-md font-medium rounded-lg text-sm
                       px-5 py-2.5 transition duration-150">
-                Pelajari Lebih Lanjut
+                {{ __('message.Learn_Button') }}
             </a>
         </div>
     </section>
@@ -92,13 +101,13 @@
             {{-- Title --}}
             <div class="text-center mb-14">
                 <h2 class="text-4xl md:text-5xl font-extrabold">
-                    Layanan <span class="text-[#002473]">Kami</span>
+                    {{ __('message.Service_Section.Service_Title1') }} <span
+                        class="text-[#002473]">{{ __('message.Service_Section.Service_Title2') }}</span>
                 </h2>
                 <div class="w-20 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></div>
 
                 <p class="mt-6 text-2xl text-gray-600 max-w-3xl mx-auto">
-                    Kami menyediakan berbagai layanan jasa engineering, pengadaan,
-                    instalasi dan perawatan untuk memenuhi kebutuhan Anda
+                    {{ __('message.Service_Section.Service_Subtitle') }}
                 </p>
             </div>
 
@@ -262,16 +271,17 @@
         <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-10">
             <div>
                 <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">
-                    Mengapa Memilih <span class="text-[#002473]">Kami</span> ?
+                    {{ __('message.Superiority_Section.Superiority_Title') }}<span
+                        class="text-[#002473]">{{ __('message.Superiority_Section.Superiority_Title2') }}</span> ?
                 </h2>
                 <p class="mt-2 text-xl font-semibold text-gray-600">
-                    Komitmen kami adalah kepuasan dan kepercayaan pelanggan
+                    {{ __('message.Superiority_Section.Superiority_Subtitle') }}
                 </p>
             </div>
 
             <a href="#"
                 class="mt-4 md:mt-0 text-[#002473] font-bold flex items-center gap-2 hover:gap-3 transition-all hidden md:flex">
-                Pelajari Lebih Lanjut
+                {{ __('message.Learn_Button') }}
                 <span class="text-xl font-bold">→</span>
             </a>
         </div>
@@ -295,7 +305,7 @@
                 </div>
 
                 <h3 class="font-bold text-2xl text-gray-800 mb-10">
-                    Legalitas Resmi
+                    {{ __('message.Superiority_Section.Superiority_Point1_Title') }}
                 </h3>
 
                 <p class="text-xl  text-gray-500 mb-15">
@@ -324,11 +334,11 @@
                 </div>
 
                 <h3 class="font-bold text-2xl text-gray-800 mb-10">
-                    Sertifikasi K3/SKA
+                    {{ __('message.Superiority_Section.Superiority_Point2_Title') }}
                 </h3>
 
                 <p class="text-xl  text-gray-500 mb-15">
-                    Tenaga ahli bersertifikat resmi
+                    {{ __('message.Superiority_Section.Superiority_Point2_Description') }}
                 </p>
             </div>
 
@@ -349,11 +359,11 @@
                 </div>
 
                 <h3 class="font-bold text-2xl text-gray-800 mb-10">
-                    Peralatan Lengkap
+                    {{ __('message.Superiority_Section.Superiority_Point3_Title') }}
                 </h3>
 
                 <p class="text-xl  text-gray-500 mb-15">
-                    Armada & alat teknis milik sendiri
+                    {{ __('message.Superiority_Section.Superiority_Point3_Description') }}
                 </p>
             </div>
 
@@ -374,11 +384,11 @@
                 </div>
 
                 <h3 class="font-bold text-2xl text-gray-800 mb-3">
-                    Pengalaman Terpercaya
+                    {{ __('message.Superiority_Section.Superiority_Point4_Title') }}
                 </h3>
 
                 <p class="text-xl  text-gray-500 mb-15">
-                    Melayani instansi pemerintah & swasta
+                    {{ __('message.Superiority_Section.Superiority_Point4_Description') }}
                 </p>
             </div>
 
@@ -394,7 +404,7 @@
             shadow-md
             hover:gap-3 hover:bg-[#002473] transition-all transform hover:-translate-y-1">
 
-                Pelajari Lebih Lanjut
+                {{ __('message.Learn_Button') }}
                 <span class="text-xl">→</span>
             </button>
         </a>
@@ -425,23 +435,37 @@
             </div>
 
             <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-[1.1] tracking-tight">
-                Siap Menjadi Mitra Strategis <br class="hidden md:block">
-                Solusi <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">Kontraktor</span>
-                Anda
+                @if ($isIndo)
+                    Siap Menjadi Mitra Strategis <br class="hidden md:block">
+                    Solusi <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">Kontraktor</span>
+                    Anda
+                @else
+                    Ready to be your strategic partner in <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">contracting</span>
+                    and maintenance solutions.
+                @endif
+
+
             </h2>
 
 
 
             <p class="mt-8 text-blue-100/80 text-base md:text-lg leading-relaxed max-w-2xl mx-auto font-light">
-                Konsultasikan kebutuhan <span class="text-white font-medium">elektrikal, mekanikal, dan
-                    konstruksi</span> Anda bersama tim ahli yang mengutamakan kualitas dan presisi.
+                @if ($isIndo)
+                    Konsultasikan kebutuhan <span class="text-white font-medium">elektrikal, mekanikal, dan
+                        konstruksi</span> Anda bersama tim ahli yang mengutamakan kualitas dan presisi.
+                @else
+                    Consult your <span class="text-white font-medium">electrical, mechanical, and construction</span>
+                    needs with an expert team that prioritizes quality and precision.
+                @endif
+
             </p>
 
             <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a href="#"
                     class="group relative inline-flex items-center gap-3 px-8 py-4 bg-red-600 text-white text-sm font-bold rounded-xl transition-all duration-300 hover:bg-red-700 hover:scale-105 hover:shadow-[0_10px_20px_-10px_rgba(220,38,38,0.5)]">
-                    Hubungi Kami Sekarang
+                    {{ __('message.Contact_Button') }}
                     <svg xmlns="http://www.w3.org/2000/svg"
                         class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">

@@ -47,5 +47,5 @@ return [
     ],
 
     //Untuk About Us Page
-    
+
 ];

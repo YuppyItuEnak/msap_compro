@@ -6,15 +6,14 @@
 
                 <h1
                     class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 [text-shadow:_0_4px_12px_rgb(0_0_0_/_50%)]">
-                    Tentang <span class="text-blue-800">CV. Mitra Sarana Abdi Pratama</span>
+                    {{ __('about.hero_title') }} <span class="text-blue-800">{{ __('about.hero_company') }}</span>
                 </h1>
 
                 <div class="w-24 h-1.5 bg-blue-800 mx-auto mb-8 rounded-full shadow-lg"></div>
 
                 <p
                     class="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed [text-shadow:_0_2px_8px_rgb(0_0_0_/_60%)]">
-                    Perusahaan jasa kontraktor dan perdagangan yang <br><span class="font-bold">inovatif, selalu
-                        berkembang, dan terpercaya di Indonesia</span>
+                    {{ __('about.hero_sub') }} <br><span class="font-bold">{{ __('about.hero_subtitle') }}</span>
                 </p>
             </div>
         </div>
@@ -23,9 +22,9 @@
     {{-- About Section --}}
     <section class="py-24 max-w-screen-xl mx-auto px-6">
         <div class="text-center mb-16">
-            <h1 class="font-bold text-[#002473] text-xl">Tentang Kami</h1>
+            <h1 class="font-bold text-[#002473] text-xl">{{ __('about.about_small') }}</h1>
             <h1 class="text-5xl font-bold mb-5">
-                Profil Perusahaan
+                {{ __('about.about_profile') }}
             </h1>
             <div class="w-24 h-1.5 bg-blue-800 mx-auto mb-8 rounded-full shadow-lg"></div>
         </div>
@@ -38,26 +37,16 @@
                 <!-- Badge -->
                 <span
                     class="absolute -top-4 left-0 bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-md shadow">
-                    Berdiri Sejak 2014
+                    {{ __('about.since') }}
                 </span>
 
                 <!-- Content -->
                 <p class="text-gray-700 text-xl leading-relaxed mb-4">
-                    <strong>CV. Mitra Sarana Abdi Pratama (MSAP)</strong> adalah perusahaan kontraktor dan
-                    penyedia jasa pemeliharaan terintegrasi yang berbasis di Surabaya.
-                    Kami hadir sebagai mitra strategis bagi instansi pemerintah maupun
-                    swasta dalam menyediakan solusi teknis yang mencakup bidang
-                    elektrikal, mekanikal, konstruksi, hingga pengadaan barang operasional.
+                    <strong>CV. Mitra Sarana Abdi Pratama (MSAP)</strong> {{ __('about.about_p1') }}
                 </p>
 
                 <p class="text-gray-700 text-xl leading-relaxed">
-                    Berbekal legalitas resmi dan tim tenaga ahli yang tersertifikasi di
-                    bidang K3 serta Teknik Tenaga Listrik, MSAP berkomitmen untuk
-                    memberikan layanan yang inovatif, aman, dan ramah lingkungan.
-                    Dengan rekam jejak yang solid dalam menangani berbagai proyek skala
-                    besar, kami terus berkembang untuk menjadi perusahaan jasa kontraktor
-                    yang paling terpercaya di Indonesia melalui pengembangan SDM yang
-                    unggul dan pemanfaatan teknologi peralatan yang modern.
+                    {{ __('about.about_p2') }}
                 </p>
             </div>
         </div>
@@ -95,7 +84,8 @@
                             </div>
 
                             <h3 class="text-3xl font-bold text-gray-900">
-                                Visi <span class="text-blue-600">Perusahaan</span>
+                                {{ __('about.vision_title') }} <span
+                                    class="text-blue-600">{{ __('about.company') }}</span>
                             </h3>
                         </div>
 
@@ -106,8 +96,7 @@
                                 <div class="w-2 h-40 bg-blue-600 rounded-full"></div>
 
                                 <p class="text-gray-900 text-2xl font-semibold leading-relaxed max-w-sm">
-                                    Menjadi perusahaan jasa kontraktor yang inovatif,
-                                    selalu berkembang dan terpercaya di Indonesia
+                                    {{ __('about.vision_text') }}
                                 </p>
                             </div>
                         </div>
@@ -141,14 +130,15 @@
                             </div>
 
                             <h3 class="text-3xl font-bold text-gray-900">
-                                Misi <span class="text-green-600">Perusahaan</span>
+                                {{ __('about.mission_title') }} <span
+                                    class="text-green-600">{{ __('about.company') }}</span>
                             </h3>
                         </div>
 
                         <!-- CONTENT (DITENGAHKAN) -->
                         <div class="flex flex-1 items-center">
                             <ul class="space-y-6 text-gray-900 text-base font-semibold max-w-md">
-                                <li class="flex items-start text-2xl gap-3">
+                                <li class="flex items-center text-2xl gap-3">
                                     <svg width="60" height="60" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_48_60)">
@@ -165,11 +155,11 @@
                                         </defs>
                                     </svg>
 
-                                    Mengembangkan bisnis secara terpadu melalui perkembangan SDM
+                                    {{ __('about.mission_1') }}
                                 </li>
 
                                 <li class="flex items-start text-2xl gap-3">
-                                    <svg width="55" height="55" viewBox="0 0 30 30" fill="none"
+                                    <svg width="60" height="60" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_48_60)">
                                             <path d="M10.625 15.625L13.125 18.125L19.375 11.875" stroke="#5EB546"
@@ -184,7 +174,7 @@
                                             </clipPath>
                                         </defs>
                                     </svg>
-                                    Mengutamakan dan keselamatan serta ramah lingkungan
+                                    {{ __('about.mission_2') }}
                                 </li>
                             </ul>
                         </div>
@@ -205,15 +195,21 @@
         <div class="relative z-10 max-w-7xl mx-auto">
 
             <!-- Title -->
-            <h1 class="text-4xl font-bold mb-2">
-                Sertifikasi <span class="text-[#002473]">Tenaga Ahli</span>
-            </h1>
+            @if (app()->getLocale() === 'id')
+                <h1 class="text-4xl font-bold mb-2">
+                    Sertifikasi <span class="text-[#002473]">Tenaga Ahli</span>
+                </h1>
+            @elseif (app()->getLocale() === 'en')
+                <h1 class="text-4xl font-bold mb-2">
+                    <span class="text-[#002473]">Expert</span> Certifications
+                </h1>
+            @endif
+
             <div class="w-28 h-1.5 bg-red-500 mb-4 rounded-full"></div>
 
             <!-- Description -->
             <p class="text-xl font-semibold max-w-4xl mb-10">
-                Tim kami didukung oleh tenaga ahli bersertifikat resmi untuk
-                menjamin kualitas dan keamanan pekerjaan
+                {{ __('about.cert_desc') }}
             </p>
 
             <!-- Cards -->
@@ -236,32 +232,63 @@
                             </svg>
                         </div>
 
-                        <h3 class="text-xl font-bold leading-tight">
-                            K3 – Keselamatan &<br />
-                            Kesehatan Kerja
-                        </h3>
+                        @if (app()->getlocale() === 'id')
+                            <h3 class="text-xl font-bold leading-tight">
+                                K3 – Keselamatan &<br />
+                                Kesehatan Kerja
+                            </h3>
+                        @else
+                            <h3 class="text-xl font-bold leading-tight">
+                                OHS – Occupational Health &<br />
+                                Safety
+                            </h3>
+                        @endif
+
+
                     </div>
 
                     <!-- Content -->
                     <div class="flex flex-wrap gap-3">
-                        <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
-                            Ahli K3 Spesialis Bidang Listrik
-                        </span>
-                        <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
-                            Teknisi Scaffolding
-                        </span>
-                        <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
-                            Ahli Muda K3 Konstruksi
-                        </span>
-                        <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
-                            Juru Las Kelas I (Satu)
-                        </span>
-                        <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
-                            Program Ketrampilan Alat Berat
-                        </span>
-                        <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
-                            Tenaga Kerja Bangunan Tinggi Tingkat 2
-                        </span>
+                        @if (app()->getlocale() === 'id')
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Ahli K3 Spesialis Bidang Listrik
+                            </span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Teknisi Scaffolding
+                            </span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Ahli Muda K3 Konstruksi
+                            </span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Juru Las Kelas I (Satu)
+                            </span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Program Ketrampilan Alat Berat
+                            </span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Tenaga Kerja Bangunan Tinggi Tingkat 2
+                            </span>
+                        @else
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Electrical OHS Specialist
+                            </span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Scaffolding Technician
+                            </span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Junior Construction OHS Expert
+                            </span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Class I (Level 1) Welder
+                            </span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                Heavy Equipment Skills Program
+                            </span>
+                            <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg text-sm font-semibold">
+                                High-Rise Construction Worker Level 2
+                            </span>
+                        @endif
+
                     </div>
                 </div>
 
@@ -278,20 +305,37 @@
                             </svg>
                         </div>
 
-                        <h3 class="text-xl font-bold">
-                            SKA – Sertifikat Keahlian
-                        </h3>
+                        @if (app()->getlocale() === 'id')
+                            <h3 class="text-xl font-bold">
+                                SKA – Sertifikat Keahlian
+                            </h3>
+                        @else
+                            <h3 class="text-xl font-bold">
+                                SKA – Certificate of Expertise
+                            </h3>
+                        @endif
+
                     </div>
 
                     <!-- Content -->
                     <div class="space-y-4">
                         <div class="px-5 py-3 bg-blue-100 text-blue-900 rounded-lg">
-                            <p class="font-semibold text-sm">
-                                Ahli Teknik Tenaga Listrik
-                            </p>
-                            <p class="text-xs text-blue-700">
-                                Tingkat: Madya
-                            </p>
+                            @if (app()->getlocale() === 'id')
+                                <p class="font-semibold text-sm">
+                                    Ahli Teknik Tenaga Listrik
+                                </p>
+                                <p class="text-xs text-blue-700">
+                                    Tingkat: Madya
+                                </p>
+                            @else
+                                <p class="font-semibold text-sm">
+                                    Electrical Power Engineering Expert
+                                </p>
+                                <p class="text-xs text-blue-700">
+                                    Level: Intermediate
+                                </p>
+                            @endif
+
                         </div>
                     </div>
                 </div>
@@ -305,14 +349,28 @@
     <section class="p-10 bg-white relative overflow-hidden">
         <!-- Header -->
         <div class="text-center mb-12">
-            <h1 class="text-3xl font-bold mb-2">
-                Experience
-            </h1>
-            <div class="w-28 h-1.5 bg-[#002473] mx-auto mb-4 rounded-full"></div>
 
-            <p class="font-bold max-w-xl mx-auto text-xl text-gray-700">
-                Didukung oleh tenaga ahli tersertifikasi K3 yang memastikan setiap pengerjaan berjalan aman dan presisi.
-            </p>
+            @if (app()->getlocale() === 'id')
+                <h1 class="text-3xl font-bold mb-2">
+                    Pengalaman
+                </h1>
+                <div class="w-28 h-1.5 bg-[#002473] mx-auto mb-4 rounded-full"></div>
+
+                <p class="font-bold max-w-xl mx-auto text-xl text-gray-700">
+                    Didukung oleh tenaga ahli tersertifikasi K3 yang memastikan setiap pengerjaan berjalan aman dan
+                    presisi.
+                </p>
+            @else
+                <h1 class="text-3xl font-bold mb-2">
+                    Experience
+                </h1>
+                <div class="w-28 h-1.5 bg-[#002473] mx-auto mb-4 rounded-full"></div>
+
+                <p class="font-bold max-w-xl mx-auto text-xl text-gray-700">
+                    Supported by certified OHS professionals who ensure that every project is carried out safely and
+                    with precision.
+                </p>
+            @endif
         </div>
 
         <!-- Experience Cards -->
@@ -322,42 +380,42 @@
             <div class="relative bg-gray-200 rounded-xl shadow-md p-6 pl-10">
                 <div class="absolute left-0 top-0 h-full w-3 bg-[#002473] rounded-l-xl"></div>
                 <p class="font-semibold text-gray-900">
-                    Pemeliharaan mesin genset dan ATS
+                    {{ __('about.exp_item1') }}
                 </p>
             </div>
 
             <div class="relative bg-gray-200 rounded-xl shadow-md p-6 pl-10">
                 <div class="absolute left-0 top-0 h-full w-3 bg-[#002473] rounded-l-xl"></div>
                 <p class="font-semibold text-gray-900">
-                    Pemeliharaan dan pengadaan system hydrant
+                    {{ __('about.exp_item2') }}
                 </p>
             </div>
 
             <div class="relative bg-gray-200 rounded-xl shadow-md p-6 pl-10">
                 <div class="absolute left-0 top-0 h-full w-3 bg-[#002473] rounded-l-xl"></div>
                 <p class="font-semibold text-gray-900">
-                    Mechanical dan chemical cleaning PT. Petrokimia Gresik
+                    {{ __('about.exp_item3') }}
                 </p>
             </div>
 
             <div class="relative bg-gray-200 rounded-xl shadow-md p-6 pl-10">
                 <div class="absolute left-0 top-0 h-full w-3 bg-[#002473] rounded-l-xl"></div>
                 <p class="font-semibold text-gray-900">
-                    Pengadaan system hydrant PT. Pupuk Kujang Cikampek
+                    {{ __('about.exp_item4') }}
                 </p>
             </div>
 
             <div class="relative bg-gray-200 rounded-xl shadow-md p-6 pl-10">
                 <div class="absolute left-0 top-0 h-full w-3 bg-[#002473] rounded-l-xl"></div>
                 <p class="font-semibold text-gray-900">
-                    Instalasi 3D Traspar Coca-Cola Europacific Partner Indonesia PSD
+                    {{ __('about.exp_item5') }}
                 </p>
             </div>
 
             <div class="relative bg-gray-200 rounded-xl shadow-md p-6 pl-10">
                 <div class="absolute left-0 top-0 h-full w-3 bg-[#002473] rounded-l-xl"></div>
                 <p class="font-semibold text-gray-900">
-                    Restorasi BMW E39 1997
+                    {{ __('about.exp_item6') }}
                 </p>
             </div>
 
@@ -387,27 +445,54 @@
                 </span>
             </div>
 
-            <h2 class="max-w-6xl text-4xl md:text-5xl font-extrabold mx-auto text-white leading-[1.1] tracking-tight">
-                Integritas dalam bekerja, kualitas dalam hasil. Percayakan kebutuhan <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
-                    konstruksi</span>, <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">mekanikal</span>,
-                dan <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">elektrikal</span>
-                Anda kepada mitra yang tepat.
-            </h2>
+            @if (app()->getlocale() === 'id')
+                <h2
+                    class="max-w-6xl text-4xl md:text-5xl font-extrabold mx-auto text-white leading-[1.1] tracking-tight">
+                    Integritas dalam bekerja, kualitas dalam hasil. Percayakan kebutuhan <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
+                        konstruksi</span>, <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">mekanikal</span>,
+                    dan <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">elektrikal</span>
+                    Anda kepada mitra yang tepat.
+                </h2>
+            @else
+                <h2
+                    class="max-w-6xl text-4xl md:text-5xl font-extrabold mx-auto text-white leading-[1.1] tracking-tight">
+                    Integrity in every task, quality in every result. Entrust your
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
+                        construction
+                    </span>,
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
+                        mechanical
+                    </span>,
+                    and
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">
+                        electrical
+                    </span>
+                    needs to the right partner.
+                </h2>
+            @endif
 
 
+            @if (app()->getlocale() === 'id')
+                <p class="mt-8 text-blue-100/80 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-light">
+                    Mari wujudkan proyek impian Anda bersama <span class="text-white font-medium">CV. Mitra Sarana Abdi
+                        Pratama.</span>
+                </p>
+            @else
+                <p class="mt-8 text-blue-100/80 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-light">
+                    Let’s bring your dream project to life together with <span class="text-white font-medium">CV. Mitra Sarana Abdi
+                        Pratama.</span>
+                </p>
+            @endif
 
-            <p class="mt-8 text-blue-100/80 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-light">
-                Mari wujudkan proyek impian Anda bersama <span class="text-white font-medium">CV. Mitra Sarana Abdi
-                    Pratama.</span>
-            </p>
+
 
             <div class="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a href="#"
                     class="group relative inline-flex items-center gap-3 px-8 py-4 bg-red-600 text-white text-sm font-bold rounded-xl transition-all duration-300 hover:bg-red-700 hover:scale-105 hover:shadow-[0_10px_20px_-10px_rgba(220,38,38,0.5)]">
-                    Hubungi Kami Sekarang
+                    {{ __('about.cta_button2') }}
                     <svg xmlns="http://www.w3.org/2000/svg"
                         class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
