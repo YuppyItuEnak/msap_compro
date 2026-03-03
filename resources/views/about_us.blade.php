@@ -1,19 +1,26 @@
 <x-layout>
     {{-- Hero Section --}}
-    <section class="relative py-32 md:py-48 overflow-hidden bg-gray-100">
+    <section class="relative py-32 md:py-48 overflow-hidden bg-gray-900">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070&auto=format&fit=crop"
+                alt="Hero Background" class="w-full h-full object-cover opacity-50" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
+        </div>
+
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center">
-
                 <h1
-                    class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 [text-shadow:_0_4px_12px_rgb(0_0_0_/_50%)]">
-                    {{ __('about.hero_title') }} <span class="text-blue-800">{{ __('about.hero_company') }}</span>
+                    class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight drop-shadow-2xl">
+                    {{ __('about.hero_title') }}
+                    <span class="text-blue-400">{{ __('about.hero_company') }}</span>
                 </h1>
 
-                <div class="w-24 h-1.5 bg-blue-800 mx-auto mb-8 rounded-full shadow-lg"></div>
+                <div class="w-24 h-1.5 bg-blue-500 mx-auto mb-8 rounded-full shadow-lg"></div>
 
-                <p
-                    class="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed [text-shadow:_0_2px_8px_rgb(0_0_0_/_60%)]">
-                    {{ __('about.hero_sub') }} <br><span class="font-bold">{{ __('about.hero_subtitle') }}</span>
+                <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
+                    {{ __('about.hero_sub') }}
+                    <br>
+                    <span class="font-bold text-white">{{ __('about.hero_subtitle') }}</span>
                 </p>
             </div>
         </div>
@@ -482,7 +489,8 @@
                 </p>
             @else
                 <p class="mt-8 text-blue-100/80 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-light">
-                    Let’s bring your dream project to life together with <span class="text-white font-medium">CV. Mitra Sarana Abdi
+                    Let’s bring your dream project to life together with <span class="text-white font-medium">CV. Mitra
+                        Sarana Abdi
                         Pratama.</span>
                 </p>
             @endif

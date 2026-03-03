@@ -1,20 +1,23 @@
 <x-layout>
-    <section class="relative py-32 md:py-48 overflow-hidden bg-gray-100">
+    <section class="relative py-32 md:py-48 overflow-hidden bg-gray-900">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2070&auto=format&fit=crop"
+                alt="Contact Background" class="w-full h-full object-cover opacity-60" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
+        </div>
+
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center">
-
-                <h1
-                    class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 [text-shadow:_0_4px_12px_rgb(0_0_0_/_50%)]">
-                    {{ __('contact.contact_title') }} <span
-                        class="text-blue-800">{{ __('contact.contact_title2') }}</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+                    {{ __('contact.contact_title') }}
+                    <span class="text-blue-400 drop-shadow-md">{{ __('contact.contact_title2') }}</span>
                 </h1>
 
-
-                <p
-                    class="text-xl md:text-2xl text-white max-w-3xl mx-auto leading-relaxed [text-shadow:_0_2px_8px_rgb(0_0_0_/_60%)]">
+                <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed drop-shadow-sm">
                     {{ __('contact.contact_sub') }}
                 </p>
-                <div class="w-32 h-1.5 bg-red-600 mx-auto mt-6"></div>
+
+                <div class="w-24 h-1.5 bg-red-600 mx-auto mt-8 rounded-full"></div>
             </div>
         </div>
     </section>
@@ -154,9 +157,10 @@
                 </div>
 
                 <div class="p-2">
-                    <h3 class="font-bold text-lg text-gray-800 mb-3 uppercase tracking-wide">{{ __('contact.contact') }}</h3>
+                    <h3 class="font-bold text-lg text-gray-800 mb-3 uppercase tracking-wide">
+                        {{ __('contact.contact') }}</h3>
                     <p class="text-gray-500 text-xs leading-relaxed">
-                       {{ __('contact.contact_desc') }}
+                        {{ __('contact.contact_desc') }}
                     </p>
                 </div>
             </div>
